@@ -1,0 +1,29 @@
+.credit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    place-items: center;
+}
+
+.credit img {
+    max-width: 100%;
+    border-radius: 10px;
+    min-height: 100%;
+    margin-bottom: 10px;
+}
+
+.credit h3 {
+    font-size: 15px;
+}
+
+.credit h5 {
+    font-size: 12px;
+}
+
+.credit h3,
+.credit h5 {
+    margin: 0;
+}
