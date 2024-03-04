@@ -2,7 +2,7 @@ import Movie from "../../../../../components/movie";
 import { getMovie } from "../../../../../components/movie-info";
 import { IParams } from "../page";
 import styles from "../../../../../styles/similars.module.css";
-import { API_URL } from "../../../../contents";
+import { API_URL } from "../../../../constants";
 
 export async function generateMetadata({ params: { id } }: IParams) {
   const movie = await getMovie(id);
