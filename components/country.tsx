@@ -15,7 +15,7 @@ export default async function Country({ country, link }: CountryProps) {
   const countryData = (await getCountry(country))[0];
 
   return (
-    <Link href={link} target="_blank">
+    <Link prefetch href={link} target="_blank">
       <div>
         <div className={styles.flag}>
           <img src={countryData.flags.svg} alt={countryData.name.png} />

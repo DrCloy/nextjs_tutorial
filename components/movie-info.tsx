@@ -32,9 +32,15 @@ export default async function MovieInfo({ id }: { id: string }) {
           </a>
         )}
         <div className={styles.button}>
-          <Link href={`/movies/${id}/credits`}>Credits</Link>
-          <Link href={`/movies/${id}/providers`}>Providers</Link>
-          <Link href={`/movies/${id}/similar`}>Similar</Link>
+          <Link prefetch href={`/movies/${id}/credits`}>
+            Credits
+          </Link>
+          <Link prefetch href={`/movies/${id}/providers`}>
+            Providers
+          </Link>
+          <Link prefetch href={`/movies/${id}/similar`}>
+            Similar
+          </Link>
         </div>
       </div>
     </div>

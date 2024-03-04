@@ -10,7 +10,7 @@ interface IMovieProps {
 export default function Movie({ title, id, poster_path }: IMovieProps) {
   return (
     <div className={styles.movie}>
-      <Link href={`/movies/${id}`}>
+      <Link prefetch href={`/movies/${id}`}>
         <div className={styles.image}>
           <img src={poster_path} alt={title} />
         </div>
