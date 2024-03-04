@@ -1,7 +1,6 @@
 .credit {
     display: grid;
     grid-template-columns: 1fr;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
