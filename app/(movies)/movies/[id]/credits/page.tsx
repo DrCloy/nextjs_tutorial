@@ -2,6 +2,15 @@ import { API_URL } from "../../../../(home)/page";
 import Credit from "../../../../../components/credit";
 import { IParams } from "../page";
 import styles from "../../../../../styles/credits.module.css";
+import { getMovie } from "../../../../../components/movie-info";
+
+export async function generateMetadata({ params: { id } }: IParams) {
+  const movie = await getMovie(id);
+
+  return {
+    title: `${movie.title} - Credits`,
+  };
+}
 
 async function getCredits(id: string) {
   const response = await fetch(`${API_URL}/${id}/credits`);

@@ -9,9 +9,13 @@ interface ICreditProps {
 export default function Credit({ profile_path, name, character }: ICreditProps) {
   return (
     <div className={styles.credit}>
-      <img src={profile_path} alt={name} />
-      <h3>{name}</h3>
-      <h5>{character}</h5>
+      <div className={styles.image}>
+        <img src={profile_path} alt={name} />
+      </div>
+      <div>
+        <h3>{name}</h3>
+        <h5>{character}</h5>
+      </div>
     </div>
   );
 }

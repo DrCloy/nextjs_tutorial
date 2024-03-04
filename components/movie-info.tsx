@@ -31,9 +31,10 @@ export default async function MovieInfo({ id }: { id: string }) {
             Homepage &rarr;
           </a>
         )}
-        <div className={styles.production}>{movie.production_companies ? movie.production_companies.map((pc) => <img key={pc.id} src={pc.logo_path} alt={pc.name} />) : null}</div>
-        <div>
+        <div className={styles.button}>
           <Link href={`/movies/${id}/credits`}>Credits</Link>
+          <Link href={`/movies/${id}/providers`}>Providers</Link>
+          <Link href={`/movies/${id}/similar`}>Similar</Link>
         </div>
       </div>
     </div>
