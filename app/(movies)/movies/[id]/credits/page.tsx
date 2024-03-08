@@ -1,8 +1,8 @@
-import Credit from "../../../../../components/credit";
+import Credit from "@components/credit";
 import { IParams } from "../page";
-import styles from "../../../../../styles/credits.module.css";
-import { getMovie } from "../../../../../components/movie-info";
-import { API_URL } from "../../../../constants";
+import styles from "@styles/credits.module.css";
+import { getMovie } from "@components/movie-info";
+import { API_URL } from "@constants";
 
 export async function generateMetadata({ params: { id } }: IParams) {
   const movie = await getMovie(id);

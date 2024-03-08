@@ -1,5 +1,5 @@
-import Country from "../../../../../components/country";
-import { getMovie } from "../../../../../components/movie-info";
+import Country from "@components/country";
+import { getMovie } from "@components/movie-info";
 import { IParams } from "../page";
 import styles from "../../../../../styles/countries.module.css";
 
